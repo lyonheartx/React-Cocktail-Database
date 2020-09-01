@@ -20,14 +20,14 @@
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
   --mainBorderRadius: 0.25rem;
-  --smallWidth: 85vw;
+  --smallWidth: 75vw;
   --maxWidth: 40rem;
   --fullWidth: 1170px;
 }
 /* 
-====== 
+
 Global Styles 
-======
+
 */
 * {
   margin: 0;
@@ -79,9 +79,9 @@ img {
   margin: 0 auto;
 }
 /* 
-====== 
+
 Buttons 
-======
+
 */
 .btn,
 .btn-white,
@@ -136,9 +136,9 @@ Buttons
   border-color: var(--primaryLightColor);
 }
 /* 
-====== 
+
 Navbar
-======
+
 */
 .navbar {
   background: var(--mainWhite);
@@ -199,9 +199,9 @@ Navbar
   text-transform: capitalize;
 }
 /* 
-====== 
+
 Cocktails List 
-======
+
 */
 
 .section {
@@ -220,15 +220,15 @@ Cocktails List
   margin: 0 auto;
   max-width: var(--fullWidth);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(370.8px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(275.8px, 1fr));
   column-gap: 1.8rem;
   row-gap: 1.8rem;
   /* align-items: start; */
 }
 /* 
-====== 
+
 Cocktail 
-======
+
 */
 
 .cocktail {
@@ -263,9 +263,9 @@ Cocktail
   margin-bottom: 0.5rem;
 }
 /* 
-====== 
+
 Form
-======
+
 */
 
 .form {
@@ -296,9 +296,9 @@ Form
   font-size: 1.2rem;
 }
 /* 
-====== 
+
 Cocktail
-======
+
 */
 
 .cocktail-section {
