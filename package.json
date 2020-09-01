@@ -1,6 +1,5 @@
 {
   "name": "cocktails",
-  "homepage": "http://zilartdesign.com/cocktailsdb",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
