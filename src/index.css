@@ -312,10 +312,29 @@ Cocktail
 }
 .drink img {
   border-radius: var(--mainBorderRadius);
+  background: var(--mainBackground);
 }
 .drink p {
   font-weight: bold;
   text-transform: capitalize;
+  
+}
+.criteria {
+  width: var(--smallWidth);
+  max-width: var(--fullWidth);
+  margin: 0 auto;
+  text-align: left;
+  background: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+
+.ingredients {
+  font-weight: bold;
+  color:var(--mainWhite);
+}
+.instructions {
+  font-weight: bold;
+  text-transform: none !important;
 }
 .drink span {
   margin-right: 0.5rem;

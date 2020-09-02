@@ -26,14 +26,20 @@ export default function SingleCocktail() {
             strIngredient2,
             strIngredient3,
             strIngredient4,
-            strIngredient5
+            strIngredient5,
+            strIngredient6,
+            strIngredient7
           } = data.drinks[0];
           const ingredients = [
             strIngredient1,
             strIngredient2,
             strIngredient3,
             strIngredient4,
-            strIngredient5
+            strIngredient5,
+            strIngredient6,
+            strIngredient7
+            
+
           ];
           const newCocktail = {
             name,
@@ -67,8 +73,9 @@ export default function SingleCocktail() {
       category,
       info,
       glass,
+      ingredients,
       instructions,
-      ingredients
+      
     } = cocktail;
     return (
       <section className="section cocktail-section">
@@ -83,13 +90,18 @@ export default function SingleCocktail() {
             <p>category: {category}</p>
             <p>info: {info}</p>
             <p>glass : {glass}</p>
-            <p>instructions : {instructions}</p>
-            <p>
+            <p className="ingredients">
               ingredients :{" "}
               {ingredients.map((item, index) => {
-                return item ? <span key={index}>{item}</span> : null;
+                return item ? <span key={index}> {item + (',')}</span> : null;
+                // original without comma separation: return item ? <span key={index}>{item}</span> : null;
+                //overstack example to add comma return item ? <span key={index}> { (index ? ', ' : '')+ item }
+                // FIXED : <span key={index}> {item + (',')}</span> : null;
+               
               })}
             </p>
+            <p className="instructions"> Instructions : {instructions}</p>
+            
           </div>
         </div>
       </section>
